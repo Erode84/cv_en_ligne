@@ -26,10 +26,6 @@ h1 {
   font-size: 2em;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 /* Styles généraux */
 
 .profile-image {
@@ -52,11 +48,11 @@ body {
   background-color: #782221;
   margin: auto;
   justify-content: center;
-  border-right: solid 2px black;
 }
 .main {
   display: flex;
   flex-wrap: wrap;
+  border-right: solid 2px black;
 }
 .main_left {
   flex-basis: 25%;
@@ -128,4 +124,14 @@ small {
 .skills > h3 {
   border-left: #782221 solid 6px;
   padding-left: 1%;
+}
+
+/* Effets graphiques */
+.skills_item:hover {
+  border-right: 5px solid #782221;
+  transition: border-right 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
 }
