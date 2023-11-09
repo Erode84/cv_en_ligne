@@ -28,14 +28,6 @@ h1 {
 
 /* Styles généraux */
 
-.profile-image {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(237, 226, 226, 0.3);
-  cursor: pointer;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -134,4 +126,12 @@ small {
 
 a:hover {
   text-decoration: underline;
+}
+
+.profile-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(237, 226, 226, 0.3);
+  cursor: zoom-in;
 }
