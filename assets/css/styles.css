@@ -26,6 +26,10 @@ h1 {
   font-size: 2em;
 }
 
+h3 {
+  background-color: #dbc2a4;
+}
+
 /* Styles généraux */
 
 body {
@@ -40,22 +44,6 @@ body {
   background-color: #782221;
   margin: auto;
   justify-content: center;
-}
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  border-right: solid 2px black;
-}
-.main_left {
-  flex-basis: 25%;
-  margin-right: 5%;
-  margin-left: 3%;
-}
-.main_right {
-  flex-basis: 60%;
-  background-color: white;
-  padding-left: 4%;
-  padding-right: 3%;
 }
 
 .profile {
@@ -79,6 +67,23 @@ body {
   color: white;
 }
 
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  border-right: solid 2px black;
+}
+.main_left {
+  flex-basis: 25%;
+  margin-right: 5%;
+  margin-left: 3%;
+}
+.main_right {
+  flex-basis: 60%;
+  background-color: white;
+  padding-left: 4%;
+  padding-right: 3%;
+}
+
 .about_text,
 .languages_item,
 .hobbies_item {
@@ -89,13 +94,16 @@ body {
   text-indent: 50px;
   text-align: justify;
 }
+
+.main_left_title_line {
+  margin-left: -34px;
+  padding-left: 34px;
+}
+
 .languages_item,
 .hobbies_item {
   padding: 0;
   margin-left: 5%;
-}
-h3 {
-  background-color: #dbc2a4;
 }
 
 small {
@@ -130,6 +138,7 @@ small {
   width: 50px;
   height: 50px;
 }
+
 /* Effets graphiques */
 .skills_item:hover {
   border-right: 5px solid #782221;
