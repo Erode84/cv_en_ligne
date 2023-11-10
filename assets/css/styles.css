@@ -1,0 +1,153 @@
+/* Fonts du projet */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-VariableFont_wght.woff");
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+p,
+a,
+li {
+  font-family: "Raleway", serif;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+/* Styles généraux */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+#general_body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1160px;
+  background-color: #782221;
+  margin: auto;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  border-right: solid 2px black;
+}
+.main_left {
+  flex-basis: 25%;
+  margin-right: 5%;
+  margin-left: 3%;
+}
+.main_right {
+  flex-basis: 60%;
+  background-color: white;
+  padding-left: 4%;
+  padding-right: 3%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+
+.contact_info {
+  display: flex;
+  height: 100px;
+  width: 1160px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2c1d27;
+}
+.contact_link {
+  color: white;
+}
+
+.about_text,
+.languages_item,
+.hobbies_item {
+  color: white;
+}
+
+.about_text {
+  text-indent: 50px;
+  text-align: justify;
+}
+.languages_item,
+.hobbies_item {
+  padding: 0;
+  margin-left: 5%;
+}
+h3 {
+  background-color: #dbc2a4;
+}
+
+small {
+  color: white;
+  font-family: "Raleway", serif;
+}
+
+.pro_exp > h3 {
+  border-left: #782221 solid 6px;
+  padding-left: 1%;
+}
+
+.diplomas > h3 {
+  border-left: #782221 solid 6px;
+  padding-left: 1%;
+}
+
+.skills > h3 {
+  border-left: #782221 solid 6px;
+  padding-left: 1%;
+}
+
+.social_link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.social_item {
+  width: 50px;
+  height: 50px;
+}
+/* Effets graphiques */
+.skills_item:hover {
+  border-right: 5px solid #782221;
+  transition: border-right 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.profile-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(237, 226, 226, 0.3);
+  cursor: zoom-in;
+}
+
+.social_image :hover {
+  opacity: 0.7;
+}
